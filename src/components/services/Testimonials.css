@@ -1,0 +1,25 @@
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.testimonial-wrapper {
+  display: flex;
+  flex-direction: row;
+  white-space: nowrap;
+  width: 100%;
+  gap: 50px;
+}
+
+.testimonial-card {
+  flex-shrink: 0;
+  width: 50%; /* Adjust this to fit your card width */
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
