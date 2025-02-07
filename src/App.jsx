@@ -5,11 +5,9 @@ import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
-import Pricing from "./pages/Pricing";
 
-const MainLayout = ()=>{
-  return(
-
+const MainLayout = () => {
+  return (
     <>
       <Navbar />
       <Outlet />
@@ -20,16 +18,14 @@ const MainLayout = ()=>{
 
 const router = createBrowserRouter([
   {
-    element:<MainLayout />,
-    children:[
-      {path:"/",element:<Home />},
-      {path:"/services",element:<Services />},
-      {path:"/services",element:<Services />},
-      {path:"/about",element:<AboutUs/>},
-      {path:"/pricing",element:<Pricing/>},
-    ]
-  }
-])
+    element: <MainLayout />,
+    children: [
+      { path: "/", element: <Home /> },
+      { path: "/services", element: <Services /> },
+      { path: "/about", element: <AboutUs /> },
+    ],
+  },
+]);
 
 function App() {
   return <RouterProvider router={router} />;
