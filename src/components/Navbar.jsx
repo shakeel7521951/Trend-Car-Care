@@ -81,7 +81,7 @@ const Navbar = () => {
             </li>
             <li>
               <Link
-                to={"#"}
+                to="/contact-us"
                 className="block py-2 px-3 text-white rounded-sm hover:text-[#E82129] md:p-0"
                 onClick={() => setIsOpen(false)}
               >
