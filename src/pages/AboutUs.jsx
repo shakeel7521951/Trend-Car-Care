@@ -10,6 +10,7 @@ import washing from '../assets/Aboutimg/washing.jfif';
 import wash3 from '../assets/Aboutimg/lhr.jpg';
 import clean from '../assets/Aboutimg/clean.png';
 import AboutDescr from './AboutDescr';
+import AboutAchiv from './AboutAchiv';
 
 export default function AboutUs() {
   const images = [buff, washing, buffing, wash, wash3, clean];
@@ -36,6 +37,8 @@ export default function AboutUs() {
       </Swiper>
 
       <AboutDescr/>
+
+      <AboutAchiv/>
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import buffing from "../assets/Aboutimg/best.jpeg";
 import wash3 from "../assets/Aboutimg/lhr.jpg";
 import washer from "../assets/Aboutimg/washer.jfif";
-
+import aiwash from "../assets/Aboutimg/aiwash.webp";
 export default function AboutDescr() {
     const images = [
         {
@@ -48,11 +48,11 @@ export default function AboutDescr() {
     ];
 
     return (
-        <div className="w-full">
-            <div className="w-full sm:w-[90%] mx-auto mt-10 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="w-full sm:w-[90%] mx-auto">
+            <div className="w-full  sm:w-[90%] mx-auto mt-10 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-5">
                 {/* First Image (Single Line) */}
                 <div className="sm:w-[70%] w-full ">
-                    <div className=" px-10 sm:px-0 mb-3">
+                    <div className=" px-10 sm:px-0 sm:mt-14 mb-3">
                         <img
                             src={images[0].img}
                             alt="First Image"
@@ -82,15 +82,28 @@ export default function AboutDescr() {
                             {item.type === "paragraph" && (
                                 <p className="sm:text-lg text-xs text-gray-700 mt-4">{item.text}</p>
                             )}
-                            {item.type === "list" && (
-                                <ul className="text-gray-700 flex flex-col mt-4 gap-3 sm:text-lg text-xs">
-                                    {item.items.map((listItem, listIndex) => (
-                                        <li key={listIndex}>{listItem}</li>
-                                    ))}
-                                </ul>
-                            )}
+
                         </div>
                     ))}
+
+
+                </div>
+
+            </div>
+
+            
+            {/* services */}
+           
+            <div className="w-full  flex sm:flex-row flex-col gap-5  sm:p-10">
+                <div className="flex flex-col justify-center order-2 sm:order-1">
+                    {aboutContent[4].items.map((item, index) => (
+                        <div key={index} className="flex flex-col p-2 ">
+                            <span className="text-xs text-gray-700 text-center sm:text-xl textColor">{item}</span>
+                        </div>
+                    ))}
+                </div>
+                <div className="flex justify-center items-center order-1 sm:order-2 mt-3">
+                    <img src={aiwash} alt="AI Wash Service" className=" w-[60%] sm:w-[60%] h-auto object-cover rounded-lg shadow-md" />
                 </div>
             </div>
         </div >
