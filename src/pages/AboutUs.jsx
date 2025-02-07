@@ -1,19 +1,17 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay } from 'swiper/modules';
-import 'swiper/css';
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay } from "swiper/modules";
+import "swiper/css";
 
-
-import buffing from '../assets/Aboutimg/best.jpeg';
-import buff from '../assets/Aboutimg/buff.jfif';
-import wash from '../assets/Aboutimg/wash.jfif';
-import washing from '../assets/Aboutimg/washing.jfif';
-import wash3 from '../assets/Aboutimg/lhr.jpg';
-import clean from '../assets/Aboutimg/clean.png';
-import AboutDescr from './AboutDescr';
-import AboutAchiv from './AboutAchiv';
+import buffing from "../assets/Aboutimg/best.jpeg";
+import wash from "../assets/Aboutimg/wash.jfif";
+import washing from "../assets/Aboutimg/washing.jfif";
+import wash3 from "../assets/Aboutimg/lhr.jpg";
+import clean from "../assets/Aboutimg/clean.png";
+import AboutDescr from "./AboutDescr";
+import AboutAchiv from "./AboutAchiv";
 
 export default function AboutUs() {
-  const images = [buff, washing, buffing, wash, wash3, clean];
+  const images = [buffing, washing, , wash, wash3, clean];
 
   return (
     <div className="w-full h-[40vh] sm:h-[90vh] mx-auto">
@@ -22,7 +20,7 @@ export default function AboutUs() {
         spaceBetween={0}
         slidesPerView={1}
         autoplay={{ delay: 4000, disableOnInteraction: false }}
-        loop={true}  
+        loop={true}
         className="w-full h-full"
       >
         {images.map((img, index) => (
@@ -36,9 +34,9 @@ export default function AboutUs() {
         ))}
       </Swiper>
 
-      <AboutDescr/>
+      <AboutDescr />
 
-      <AboutAchiv/>
+      <AboutAchiv />
     </div>
   );
 }
