@@ -11,26 +11,26 @@ const Offers = () => {
       title: "Regular Care",
       description:
         "Save 30% with our Regular Care 5-voucher pack and keep your car looking its best all the time!",
-      link: "#", // Add the actual link to the offer page
+      link: "#",
     },
     {
       image: LOYALTY_BOOKS,
       title: "Loyalty Books",
       description:
         "Get exclusive discounts when you purchase our Loyalty Book. Perfect for regular visits!",
-      link: "#", // Add the actual link to the offer page
+      link: "#",
     },
     {
       image: ONLINE_BOOKING_SPECIAL,
       title: "Online Booking Special",
       description:
         "Book your car wash online and enjoy 20% off your first booking with us!",
-      link: "#", // Add the actual link to the offer page
+      link: "#",
     },
   ];
 
   return (
-    <div className="my-10">
+    <div className="my-10 mx-3">
       <p className="text-center text-lg font-semibold text-red-600 uppercase tracking-wide">
         Trend Car Care Offers
       </p>
