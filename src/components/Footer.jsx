@@ -1,21 +1,30 @@
-import React from "react";
+
 import logoPic from "../assets/Logo.png";
 import {
-  FaFacebook,
-  FaLinkedin,
   FaInstagram,
   FaLocationDot,
+  FaFacebookF,
+  FaLinkedinIn,
 } from "react-icons/fa6";
 import { IoLogoYoutube, IoMdTime, IoIosMail } from "react-icons/io";
 import { IoCallSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
+  const socialIcons = [
+    { icon: FaFacebookF, bgColor: "bg-blue-600", hoverColor: "group-hover:bg-blue-700" },
+    { icon: FaInstagram, bgColor: "bg-pink-500", hoverColor: "group-hover:bg-pink-600" },
+    { icon: IoLogoYoutube, bgColor: "bg-red-500", hoverColor: "group-hover:bg-red-600" },
+    { icon: FaLinkedinIn, bgColor: "bg-blue-700", hoverColor: "group-hover:bg-blue-800" },
+  ];
   return (
     <div className="bg-[#1A1A1A]">
+
+
       <div className=" flex flex-col md:flex-row justify-between items-center md:items-start gap-12 py-12 px-8 w-full">
+
         {/* Logo & About Section */}
-        <div className="flex flex-col items-center md:items-start text-white gap-4 text-center md:text-left max-w-sm">
+        <div className=" w-[100%] sm:w-[30%] flex flex-col items-center md:items-start text-white gap-4 text-center md:text-left max-w-sm">
           <img className="w-40" src={logoPic} alt="Outbox Logo" />
           <h1 className="text-xl font-bold">OUTBOX Event Management Co.</h1>
           <p className="text-[#ADB5C6] text-sm">
@@ -24,15 +33,20 @@ const Footer = () => {
             innovative ideas.
           </p>
           <div className="flex gap-6 mt-2">
-            <FaFacebook className="text-[25px] cursor-pointer hover:text-red-600 transition" />
-            <FaInstagram className="text-[25px] cursor-pointer hover:text-red-600 transition" />
-            <IoLogoYoutube className="text-[25px] cursor-pointer hover:text-red-600 transition" />
-            <FaLinkedin className="text-[25px] cursor-pointer hover:text-red-600 transition" />
+            {socialIcons.map(({ icon: Icon, bgColor, hoverColor }, index) => (
+              <button
+                key={index}
+                className="w-10 h-10 flex items-center justify-center relative overflow-hidden rounded-full  shadow-md group transition-all duration-300 cursor-pointer"
+              >
+                <Icon className="relative z-10 text-white text-[22px] transition-all duration-300 group-hover:text-white" />
+                <div className={`absolute top-full left-0 w-full h-full rounded-full ${bgColor} z-0 transition-all duration-500 ${hoverColor} group-hover:top-0`}></div>
+              </button>
+            ))}
           </div>
         </div>
 
         {/* Navigation & Contact Section */}
-        <div className="flex flex-col gap-8 sm:mt-14 text-white">
+        <div className=" w-[100%] sm:w-[40%] flex flex-col gap-8 sm:mt-14 text-white">
           {/* Navigation Links */}
           <div className="flex md:flex-row flex-col gap-6 text-lg font-medium">
             <Link to="/" className="hover:text-red-600 transition">
@@ -78,26 +92,19 @@ const Footer = () => {
         </div>
 
         {/* Call to Action & Map */}
-        <div className="flex flex-col gap-6 items-center md:items-start sm:mt-14">
+        <div className=" w-[100%]  sm:w-[30%] flex flex-col gap-6 items-center md:items-start sm:mt-14">
           <Link
             to="/contact-us"
             className="bg-red-600 text-white px-4 py-2 font-semibold text-lg rounded-full hover:bg-white hover:text-red-600 border-2 border-red-600 transition-all"
           >
             Get In Touch
           </Link>
-          <div className="w-48 h-48 overflow-hidden rounded-lg shadow-lg">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d111256.594497058!2d71.60760949092463!3d29.37706456662029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b90c46c611ad5%3A0xfcdf0da8e103f862!2sBahawalpur%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2s!4v1738978381879!5m2!1sen!2s"
-              width="100%"
-              height="100%"
-              style={{ border: 0 }}
-              allowFullScreen=""
-              loading="lazy"
-            ></iframe>
+          <div className=" w-full  shadow-[#bb7c7c31]   h-48 overflow-hidden rounded-lg shadow-lg">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1846227.3214989447!2d50.2640790587813!3d25.340709073309977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e45c534ffdce87f%3A0x1cfa88cf812b4032!2sQatar!5e0!3m2!1sen!2s!4v1739000991465!5m2!1sen!2s" width="100%" height="100%" allowfullscreen="" loading="lazy" ></iframe>
           </div>
         </div>
       </div>
-      <hr className="text-white mb-5"/>
+      <hr className="text-white mb-5" />
       <p className="text-center text-white pb-2">
         {new Date().getFullYear()} All Rights Reserved By
         <span className="text-red-600"> Trend Car Care</span>

@@ -63,7 +63,7 @@ export default function AboutAchiv() {
 
             {/* cards */}
 
-            <div className="cursor-pointer grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-7 sm:mt-10">
+            <div className="cursor-pointer grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-7 sm:mt-10">
                 {services.map((service, index) => (
                     <motion.div
                         key={index}
@@ -76,7 +76,7 @@ export default function AboutAchiv() {
                         <div className=" p-6  flex justify-center items-center">
                             <img src={service.img} alt="icon" />
                         </div>
-                        <h3 className="text-xl font-semibold">{service.title}</h3>
+                        <h3 className="text-xl font-semibold sm:text-wrap">{service.title}</h3>
                         <p className="text-gray-600 mt-2">{service.description}</p>
                     </motion.div>
                 ))}

@@ -1,4 +1,3 @@
-import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { TiMessages } from "react-icons/ti";
 import { FaPhone } from "react-icons/fa";
