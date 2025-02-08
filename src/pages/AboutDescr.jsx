@@ -49,9 +49,9 @@ export default function AboutDescr() {
 
     return (
         <div className="w-full sm:w-[90%] mx-auto">
-            <div className="w-full  sm:w-[90%] mx-auto mt-10 sm:mt-20 grid grid-cols-1 sm:grid-cols-2 gap-5">
+            <div className="w-full  sm:w-[90%] mx-auto mt-10 sm:mt-10 grid grid-cols-1 lg:grid-cols-2 gap-5">
                 {/* First Image (Single Line) */}
-                <div className="sm:w-[70%] w-full ">
+                <div className="sm:w-[70%] w-full mx-auto">
                     <div className=" px-10 sm:px-0 sm:mt-14 mb-3">
                         <img
                             src={images[0].img}
@@ -78,7 +78,7 @@ export default function AboutDescr() {
                 <div className="text-start px-3">
                     {aboutContent.map((item, index) => (
                         <div key={index}>
-                            {item.type === "heading" && <h1 className={item.className}>{item.text}</h1>}
+                            {item.type === "heading" && <h1 className={item.className} style={{color:'red'}}>{item.text}</h1>}
                             {item.type === "paragraph" && (
                                 <p className="sm:text-lg text-xs text-gray-700 mt-4">{item.text}</p>
                             )}
@@ -94,16 +94,16 @@ export default function AboutDescr() {
             
             {/* services */}
            
-            <div className="w-full  flex sm:flex-row flex-col gap-5  sm:p-10">
-                <div className="flex flex-col justify-center order-2 sm:order-1">
+            <div className="w-full flex md:flex-row flex-col gap-5 md:justify-between  sm:p-10">
+                <div className="flex flex-col w-[100%] md:w-[50%] justify-center order-2 sm:order-1">
                     {aboutContent[4].items.map((item, index) => (
-                        <div key={index} className="flex flex-col p-2 ">
-                            <span className="text-xs text-gray-700 text-center sm:text-xl textColor">{item}</span>
+                        <div key={index} className="flex flex-col p-2 w-full ">
+                            <span className="text-xl text-center md:text-start sm:text-nowrap text-gray-700 sm:text-xl ">{item}</span>
                         </div>
                     ))}
                 </div>
-                <div className="flex justify-center items-center order-1 sm:order-2 mt-3">
-                    <img src={aiwash} alt="AI Wash Service" className=" w-[60%] sm:w-[60%] h-auto object-cover rounded-lg shadow-md" />
+                <div className="flex justify-center md:justify-end lg:justify-center  order-1 sm:order-2 mt-3 w-full">
+                    <img src={aiwash} alt="AI Wash Service" className=" w-[80%] sm:w-[60%] h-auto object-cover rounded-lg shadow-md" />
                 </div>
             </div>
         </div >

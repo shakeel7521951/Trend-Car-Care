@@ -11,10 +11,10 @@ import AboutDescr from "./AboutDescr";
 import AboutAchiv from "./AboutAchiv";
 
 export default function AboutUs() {
-  const images = [buffing, washing, , wash, wash3, clean];
+  const images = [buffing, washing, wash, wash3, clean];
 
   return (
-    <div className="w-full h-[40vh] sm:h-[90vh] mx-auto">
+    <div className="min-h-screen flex flex-col">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}
@@ -28,15 +28,16 @@ export default function AboutUs() {
             <img
               src={img}
               alt={`Slide ${index + 1}`}
-              className="w-full h-full object-cover"
+              className="w-full h-[90vh] object-cover"
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
-      <AboutDescr />
-
-      <AboutAchiv />
+      <main className="flex-grow">
+        <AboutDescr />
+        <AboutAchiv />
+      </main>
     </div>
   );
 }
