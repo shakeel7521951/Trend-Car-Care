@@ -46,7 +46,7 @@ const Offers = () => {
         {offers.map((offer, index) => (
           <div
             key={index}
-            className="relative w-full sm:w-1/3 md:w-1/4 bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
+            className="relative w-full sm:w-1/3 md:w-[350px] cursor-pointer bg-white rounded-lg shadow-lg overflow-hidden hover:scale-105 transition-transform duration-300"
           >
             <img src={offer.image} alt={offer.title} className="w-full h-60 object-cover" />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
@@ -55,7 +55,7 @@ const Offers = () => {
               ">{offer.description}</p>
               <Link
                 to={offer.link}
-                className="mt-4 bg-red-600 p-2 px-3 rounded-xl text-white hover:bg-red-700 transition-colors"
+                className="bg-red-600 text-white px-6 py-2 mt-3 text-center font-semibold text-lg rounded-full hover:bg-white hover:text-red-600 border-1 border-red-600 transition-all"
               >
                 Buy Now
               </Link>

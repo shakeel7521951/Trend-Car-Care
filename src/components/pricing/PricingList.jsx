@@ -79,7 +79,7 @@ const PricingList = () => {
           </div>
         ))}
       </div>
-      <div className= "w-fit mt-10 mx-auto">
+      <div className= "w-fit my-10 mx-auto">
       <Link
         to="/contact-us"
         className="bg-red-600  text-white border-2 border-red-600 px-6 py-3 font-semibold text-xl rounded-full hover:bg-white hover:text-red-600 hover:border-red-600 transition-all ease-in-out duration-300 w-fit"

@@ -38,10 +38,15 @@ const TestimonialSlider = () => {
       <Swiper
         modules={[Autoplay]}
         spaceBetween={20}
-        slidesPerView={1}
+        slidesPerView={3}
         autoplay={{ delay: 3000 }}
         loop={true}
         className="max-w-6xl mx-auto"
+        breakpoints={{
+          0: { slidesPerView: 1 }, 
+          640: { slidesPerView: 2 }, 
+          1024: { slidesPerView: 3 },
+        }}
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide

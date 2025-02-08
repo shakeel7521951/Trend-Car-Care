@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <section className="relative bg-cover bg-center h-[500px] flex items-center justify-center text-center text-white">
       {/* Background overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-[#1b151589] bg-opacity-50 z-10"></div>
 
       {/* Content */}
       <div className="relative z-10 p-6 rounded-lg">

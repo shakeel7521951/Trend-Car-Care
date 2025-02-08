@@ -5,7 +5,7 @@ import PricingList from '../components/pricing/PricingList';
 const Pricing = () => {
   return (
     <div>
-        <img src={banner} alt='Pricing Banner' className='h-[80vh]'/>
+        <img src={banner} alt='Pricing Banner' className='h-[85vh]'/>
         <PricingList/>
     </div>
   )

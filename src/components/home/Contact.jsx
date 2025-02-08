@@ -48,7 +48,7 @@ const Contact = () => {
         {contactOptions.map((option, index) => (
           <div
             key={index}
-            className="relative w-full sm:w-1/3 md:w-[320px] bg-white rounded-lg shadow-xl overflow-hidden hover:scale-105 transform transition-transform duration-300"
+            className="relative w-full sm:w-1/3 md:w-[320px] cursor-pointer bg-white rounded-lg shadow-xl overflow-hidden hover:scale-105 transform transition-transform duration-300"
           >
             <img src={option.image} alt={option.title} className="w-full h-72 object-cover" />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
@@ -56,7 +56,7 @@ const Contact = () => {
               <p className="text-lg mt-2 text-center">{option.description}</p>
               <Link
                 to={option.link}
-                className="mt-4 bg-red-600 p-3 rounded-xl text-white hover:bg-red-700 transition-colors"
+                className="bg-red-600 text-white px-4 py-2 mt-4 text-center font-semibold text-lg rounded-full hover:bg-white hover:text-red-600 border-1 border-red-600 transition-all"
               >
                 Get In Touch
               </Link>
