@@ -14,7 +14,7 @@ export default function AboutUs() {
   const images = [buffing, washing, wash, wash3, clean];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex mt-20 flex-col">
       <Swiper
         modules={[Autoplay]}
         spaceBetween={0}

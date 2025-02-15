@@ -1,14 +1,13 @@
-
-import banner from '../assets/home/pricing_banner.png';
-import PricingList from '../components/pricing/PricingList';
+import banner from "../assets/home/pricing_banner.png";
+import PricingList from "../components/pricing/PricingList";
 
 const Pricing = () => {
   return (
-    <div>
-        <img src={banner} alt='Pricing Banner' className='h-[85vh]'/>
-        <PricingList/>
+    <div className="mt-20">
+      <img src={banner} alt="Pricing Banner" className="h-[40vh] sm:h-[85vh]" />
+      <PricingList />
     </div>
-  )
-}
+  );
+};
 
-export default Pricing
+export default Pricing;
