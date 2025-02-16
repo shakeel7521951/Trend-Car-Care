@@ -1,17 +1,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
-
-import buffing from "../assets/Aboutimg/best.jpeg";
-import wash from "../assets/Aboutimg/wash.jfif";
-import washing from "../assets/Aboutimg/washing.jfif";
-import wash3 from "../assets/Aboutimg/lhr.jpg";
-import clean from "../assets/Aboutimg/clean.png";
+import a from "/services/a.jpg";
 import AboutDescr from "./AboutDescr";
 import AboutAchiv from "./AboutAchiv";
 
 export default function AboutUs() {
-  const images = [buffing, washing, wash, wash3, clean];
+  const images = [
+    "/services/car-wash-detailing-station.jpg",
+    "/services/wash car.jpg",
+    "/services/coating.jpg",
+    "/services/detail.jpg",
+    a,
+    "/services/car-wrapping-with-foil-car-service.jpg",
+  ];
 
   return (
     <div className="min-h-screen flex mt-20 flex-col">

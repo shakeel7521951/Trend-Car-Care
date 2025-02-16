@@ -4,34 +4,38 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 const services = [
   {
-    title_en: "Basic Wash",
+    title_en: "Washing",
     title_ar: "غسيل أساسي",
     description_en:
-      "Our Basic Wash is a perfect solution for a quick refresh. It includes an exterior hand wash using premium car shampoo to remove dust, dirt, and minor road grime. Your car will be carefully rinsed with clean water and dried using microfiber towels to avoid scratches.",
+      "Our Wash is a perfect solution for a quick refresh. It includes an exterior hand wash using premium car shampoo to remove dust, dirt, and minor road grime. Your car will be carefully rinsed with clean water and dried using microfiber towels to avoid scratches.",
     description_ar:
       "غسيل الأساس هو الحل المثالي لإنعاش سريع. يشمل غسل يدوي خارجي باستخدام شامبو سيارات فاخر لإزالة الغبار والأوساخ والشوائب الصغيرة. سيتم شطف سيارتك بعناية بالماء النظيف وتجفيفها باستخدام مناشف ميكروفايبر لتجنب الخدوش.",
+    category: "Washing",
     price: 15,
-    image: "/services/basic-wash.jpeg",
+    image: "/services/wash car.jpg",
   },
   {
-    title_en: "Deluxe Wash",
-    title_ar: "غسيل ديلوكس",
+    title_en: "Interior Detailing",
+    title_ar: "تنظيف داخلي دقيق",
     description_en:
-      "The Deluxe Wash goes beyond a basic clean by focusing on both the exterior and interior of your car. It includes a thorough exterior wash, interior vacuuming, and detailed dashboard cleaning to remove dust and debris.",
+      "Deep-clean your car's interior with our professional detailing service. We use high-quality products to clean and restore seats, carpets, dashboards, and air vents for a fresh and spotless interior.",
     description_ar:
-      "غسيل ديلوكس يتجاوز التنظيف الأساسي من خلال التركيز على كل من الجزء الخارجي والداخلي لسيارتك. يشمل غسلاً خارجياً شاملاً، وشفطاً داخلياً، وتنظيفاً دقيقاً للوحة القيادة لإزالة الغبار والحطام.",
-    price: 25,
-    image: "/services/deluxe-wash.jpeg",
+      "قم بتنظيف الجزء الداخلي لسيارتك بعمق مع خدمة التنظيف الدقيق الاحترافية. نستخدم منتجات عالية الجودة لتنظيف واستعادة المقاعد والسجاد ولوحة القيادة وفتحات التهوية للحصول على داخلية نظيفة ومنعشة.",
+    category: "Detailing",
+    price: 80,
+    image: "/services/car-wash-detailing-station.jpg",
   },
+
   {
-    title_en: "Premium Wash",
-    title_ar: "غسيل بريميوم",
+    title_en: "Window Tinting",
+    title_ar: "تظليل النوافذ",
     description_en:
-      "Our Premium Wash offers a complete cleaning experience for your vehicle. It includes an intensive hand wash, interior vacuuming, streak-free glass cleaning, dashboard polishing, and deep seat dust removal.",
+      "Enhance privacy and protect your car’s interior with our premium window tinting service. We use high-quality films to reduce glare, block UV rays, and improve temperature control inside your vehicle.",
     description_ar:
-      "غسيل بريميوم يقدم تجربة تنظيف كاملة لسيارتك. يشمل غسل يدوي مكثف، وشفط داخلي، وتنظيف الزجاج بدون خطوط، وتلميع لوحة القيادة، وإزالة الغبار من المقاعد بعمق.",
-    price: 50,
-    image: "/services/premium-wash.jpeg",
+      "عزز الخصوصية واحمِ داخلية سيارتك مع خدمة تظليل النوافذ المتميزة. نستخدم أفلاماً عالية الجودة لتقليل الوهج وحجب الأشعة فوق البنفسجية وتحسين التحكم في درجة الحرارة داخل السيارة.",
+    category: "Tinting",
+    price: 120,
+    image: "/services/tinting.jpg",
   },
   {
     title_en: "Headlight Restoration",
@@ -40,8 +44,9 @@ const services = [
       "Over time, headlights become cloudy, yellowed, or oxidized due to exposure to UV rays and environmental factors. Our Headlight Restoration service restores clarity and brightness by using professional-grade cleaning, sanding, and polishing techniques.",
     description_ar:
       "مع مرور الوقت، تصبح الأضواء الأمامية غائمة أو صفراء أو متأكسدة بسبب التعرض للأشعة فوق البنفسجية والعوامل البيئية. خدمة استعادة الأضواء الأمامية لدينا تستعيد الوضوح والسطوع باستخدام تقنيات التنظيف والصنفرة والتلميع الاحترافية.",
+    category: "Detailing",
     price: 30,
-    image: "/services/headlight-wash.jpg",
+    image: "/services/detail.jpg",
   },
   {
     title_en: "Ceramic Coating",
@@ -50,18 +55,20 @@ const services = [
       "Protect your car with our advanced Ceramic Coating service. This high-performance protective layer shields your vehicle’s paint from dirt, water stains, UV rays, bird droppings, and minor scratches.",
     description_ar:
       "حافظ على سيارتك مع خدمة الطلاء السيراميكي المتقدمة. هذه الطبقة الواقية عالية الأداء تحمي طلاء سيارتك من الأوساخ، والبقع المائية، والأشعة فوق البنفسجية، وفضلات الطيور، والخدوش الصغيرة.",
+    category: "Protection",
     price: 100,
-    image: "/services/ceramic-wash.jpeg",
+    image: "/services/a.jpg",
   },
   {
-    title_en: "Automatic Wash",
-    title_ar: "غسيل تلقائي",
+    title_en: "Paint Protection Film (PPF)",
+    title_ar: "فيلم حماية الطلاء",
     description_en:
-      "For those who need a quick, high-quality clean, our Automatic Wash is the perfect choice. Your car will go through a state-of-the-art automated system that uses soft-touch brushes, high-pressure jets, and premium foam to remove dirt and grime efficiently.",
+      "Keep your car’s paint in pristine condition with our Paint Protection Film (PPF) service. This transparent film provides an extra layer of protection against scratches, rock chips, and contaminants.",
     description_ar:
-      "لمن يحتاجون إلى تنظيف سريع وعالي الجودة، فإن غسيل السيارات التلقائي هو الخيار المثالي. ستمر سيارتك من خلال نظام آلي متطور يستخدم فرشاً ناعمة، ورشات ضغط عالي، ورغوة فاخرة لإزالة الأوساخ بكفاءة.",
-    price: 150,
-    image: "/services/automatic-wash.jpeg",
+      "حافظ على طلاء سيارتك في حالة مثالية مع خدمة فيلم حماية الطلاء (PPF). توفر هذه الطبقة الشفافة حماية إضافية ضد الخدوش وحصى الطريق والعوامل الخارجية الضارة.",
+    category: "Protection",
+    price: 250,
+    image: "/services/car-wrapping-with-foil-car-service.jpg",
   },
 ];
 
@@ -85,8 +92,11 @@ const ServicesSection = () => {
           <ServiceCard
             key={index}
             title={language === "en" ? service.title_en : service.title_ar}
-            description={language === "en" ? service.description_en : service.description_ar}
-            price={service.price}
+            description={
+              language === "en"
+                ? service.description_en
+                : service.description_ar
+            }
             image={service.image}
           />
         ))}

@@ -7,7 +7,6 @@ const ServiceCard = ({ title, description, price, image }) => {
       <div className="p-5">
         <h3 className="text-xl font-bold text-red-600">{title}</h3>
         <p className="text-gray-600 mt-2">{description}</p>
-        <p className="text-gray-600 font-semibold mt-3">${price}</p>
       </div>
     </div>
   );

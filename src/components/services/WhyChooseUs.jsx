@@ -3,41 +3,50 @@ import { LanguageContext } from "../../context/LanguageContext";
 
 const whyChooseUs = [
   {
-    title_en: "Expert Technicians",
-    title_ar: "فنيون خبراء",
+    title_en: "Fast, Reliable & Hassle-Free",
+    title_ar: "سريعة وموثوقة وخالية من المتاعب",
     description_en:
-      "Our team consists of highly trained professionals who ensure your car gets the best treatment with precision and care. With years of experience, our technicians are equipped to handle any make or model, providing a level of service that guarantees satisfaction and the highest standards in vehicle care. Our experts continually update their skills and knowledge to stay at the forefront of the latest automotive care techniques and industry best practices, ensuring your vehicle receives top-tier care every time.",
+      "We value your time! Our team ensures efficient, high-quality service with minimal waiting time. Whether you need a quick polish, tinting, or a full detailing package, we make sure your car gets top-tier service without unnecessary delays. Our online booking system lets you schedule your service in advance for added convenience.",
     description_ar:
-      "يتكون فريقنا من محترفين مدربين تدريباً عالياً يضمنون أن سيارتك تتلقى أفضل علاج بدقة وعناية. مع سنوات من الخبرة، فنيونا مجهزون للتعامل مع أي نوع أو طراز، وتوفير مستوى من الخدمة يضمن الرضا وأعلى معايير العناية بالمركبات. يواصل خبراؤنا تحديث مهاراتهم ومعرفتهم للبقاء في طليعة أحدث تقنيات العناية بالسيارات وأفضل ممارسات الصناعة، مما يضمن لسيارتك الحصول على رعاية من الدرجة الأولى في كل مرة.",
-    image: "/services/teh-team.jpg",
+      "نحن نقدر وقتك! يضمن فريقنا خدمة فعالة وعالية الجودة مع الحد الأدنى من وقت الانتظار. سواء كنت بحاجة إلى تلميع سريع، تظليل، أو حزمة تنظيف شاملة، نحرص على أن تحصل سيارتك على أفضل خدمة دون تأخير غير ضروري. يتيح لك نظام الحجز عبر الإنترنت تحديد موعد خدمتك مسبقًا لراحة إضافية.",
+    image: "/services/save.jpg",
   },
   {
-    title_en: "Eco-Friendly Products",
-    title_ar: "منتجات صديقة للبيئة",
+    title_en: "Advanced Technology & Premium Quality",
+    title_ar: "تقنيات متقدمة وجودة فائقة",
     description_en:
-      "We use biodegradable and environmentally friendly cleaning products to keep your car shining without harming nature. Our commitment to sustainability ensures that we not only take care of your vehicle but also contribute to a cleaner, healthier planet by reducing the environmental impact of car washes. We pride ourselves on using non-toxic, cruelty-free products that are safe for both your car and the environment, making us the perfect choice for eco-conscious customers.",
+      "Our facility is equipped with the latest technology, including advanced ceramic coatings, precision tinting tools, high-pressure steam cleaners, and automated polishing systems. We ensure a seamless finish and long-lasting protection for your car, maintaining its pristine condition for years to come.",
     description_ar:
-      "نستخدم منتجات تنظيف قابلة للتحلل وصديقة للبيئة للحفاظ على لمعان سيارتك دون الإضرار بالطبيعة. يضمن التزامنا بالاستدامة أننا لا نهتم فقط بسيارتك ولكننا نساهم أيضًا في كوكب أنظف وأكثر صحة من خلال تقليل التأثير البيئي لغسلات السيارات. نحن نفخر باستخدام منتجات غير سامة وخالية من القسوة وآمنة لكل من سيارتك والبيئة، مما يجعلنا الخيار المثالي للعملاء الواعين بيئيًا.",
-    image: "/services/wash-products.jpg",
+      "مرافقنا مجهزة بأحدث التقنيات، بما في ذلك الطلاءات السيراميكية المتطورة، أدوات التظليل الدقيقة، منظفات البخار عالية الضغط، وأنظمة التلميع الآلية. نضمن لك تشطيبًا سلسًا وحماية طويلة الأمد لسيارتك، مما يحافظ على حالتها المثالية لسنوات قادمة.",
+    image: "/services/pro.jpg",
   },
   {
-    title_en: "Fast & Efficient Service",
-    title_ar: "خدمة سريعة وفعالة",
+    title_en: "Expert Car Care Specialists",
+    title_ar: "خبراء العناية بالسيارات",
     description_en:
-      "We respect your time! Our team ensures quick service without compromising quality, so you can get back on the road faster. We streamline our processes to make car washing and detailing fast, while maintaining the exceptional standards of care your car deserves. Whether you're on a tight schedule or simply want to keep things moving, we make sure you're in and out in no time. Our advanced scheduling system allows you to book your service in advance, so there's never any waiting around — just drop off your car and get back to your day.",
+      "Our skilled technicians specialize in a wide range of car care services, including detailing, polishing, tinting, ceramic coating, and paint protection. With years of experience, we guarantee precision and top-quality results, ensuring your car looks and feels brand new. Whether you need a complete interior refresh or an exterior makeover, our professionals use cutting-edge techniques to enhance your vehicle’s durability and shine.",
     description_ar:
-      "نحن نحترم وقتك! يضمن فريقنا خدمة سريعة دون التنازل عن الجودة، بحيث يمكنك العودة إلى الطريق بشكل أسرع. نحن نبسط عملياتنا لجعل غسيل السيارات والتفاصيل أسرع، مع الحفاظ على معايير العناية الاستثنائية التي تستحقها سيارتك. سواء كنت في جدول زمني ضيق أو ببساطة تريد أن تستمر الأمور، نحرص على أنك ستكون في الخارج في وقت قصير. يتيح لك نظام الجدولة المتقدم لدينا حجز خدمتك مسبقًا، بحيث لا يوجد انتظار — فقط قم بإسقاط سيارتك وارجع إلى يومك.",
-    image: "/services/fast-wash.jpg",
+      "يتخصص فنينا المهرة في مجموعة واسعة من خدمات العناية بالسيارات، بما في ذلك التلميع، التظليل، الطلاء السيراميكي، وحماية الطلاء. مع سنوات من الخبرة، نضمن لك الدقة والجودة العالية، مما يجعل سيارتك تبدو وتشعر وكأنها جديدة تمامًا. سواء كنت بحاجة إلى تجديد داخلي كامل أو تحسين مظهر خارجي، يستخدم محترفونا أحدث التقنيات لتعزيز متانة ولمعان سيارتك.",
+    image: "/services/detail.jpg",
   },
   {
-    title_en: "Advanced Technology",
-    title_ar: "تقنية متقدمة",
+    title_en: "Comprehensive Car Services",
+    title_ar: "خدمات سيارات شاملة",
     description_en:
-      "Our facility is equipped with state-of-the-art technology to provide the most effective and safe cleaning solutions. From high-powered washers to automated drying systems, we utilize the latest innovations in car care to provide a deep clean that’s both efficient and gentle on your vehicle. This technology ensures every part of your car receives the optimal treatment, from the wheels to the roof. Our high-tech systems are designed to maximize results while minimizing water usage, reducing waste, and ensuring an environmentally responsible service.",
+      "We provide a full range of car enhancement and protection services, including premium detailing, paint correction, ceramic coatings, window tinting, headlight restoration, and scratch removal. Our holistic approach ensures that every part of your vehicle receives the highest level of care, from the exterior body to the smallest interior details.",
     description_ar:
-      "مرافقنا مجهزة بأحدث التقنيات لتقديم أكثر حلول التنظيف فعالية وأمانًا. من الغسالات عالية القوة إلى أنظمة التجفيف الآلية، نستخدم أحدث الابتكارات في العناية بالسيارات لتقديم تنظيف عميق يكون فعالًا ولطيفًا في نفس الوقت على سيارتك. تضمن هذه التقنية أن كل جزء من سيارتك يحصل على العلاج الأمثل، من العجلات إلى السقف. تم تصميم أنظمتنا عالية التقنية لتحقيق أقصى النتائج مع تقليل استهلاك المياه وتقليل النفايات وضمان خدمة بيئية مسؤولة.",
-    image: "/services/advance wash.jpg",
+      "نقدم مجموعة كاملة من خدمات تحسين وحماية السيارات، بما في ذلك التلميع الاحترافي، تصحيح الطلاء، الطلاء السيراميكي، تظليل النوافذ، ترميم المصابيح الأمامية، وإزالة الخدوش. يضمن نهجنا الشامل أن يحصل كل جزء من سيارتك على أعلى مستوى من العناية، من الهيكل الخارجي إلى أصغر التفاصيل الداخلية.",
+    image: "/services/coating.jpg",
   },
+  // {
+  //   title_en: "Eco-Friendly & Safe Products",
+  //   title_ar: "منتجات آمنة وصديقة للبيئة",
+  //   description_en:
+  //     "We use high-quality, non-toxic, and eco-friendly products for all our services, ensuring your vehicle receives the best treatment without harming the environment. From waterless car washes to biodegradable polishes, our solutions deliver outstanding results while reducing environmental impact.",
+  //   description_ar:
+  //     "نستخدم منتجات عالية الجودة، غير سامة وصديقة للبيئة في جميع خدماتنا، مما يضمن حصول سيارتك على أفضل معالجة دون الإضرار بالبيئة. بدءًا من غسيل السيارات بدون ماء إلى منتجات التلميع القابلة للتحلل، توفر حلولنا نتائج مذهلة مع تقليل التأثير البيئي.",
+  //   image: "/services/eco-friendly.jpg",
+  // },
 ];
 
 const WhyChooseUs = () => {
@@ -47,7 +56,7 @@ const WhyChooseUs = () => {
     <section className="py-16 bg-gray-100">
       <div className="max-w-6xl mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-gray-800 mb-12">
-          {language === "en" ? "Why Choose Us? 🌟" : "لماذا تختارنا؟ 🌟"}
+          {language === "en" ? "What we provide?" : "ماذا نقدم؟"}
         </h2>
 
         <div className="space-y-6">
@@ -65,13 +74,17 @@ const WhyChooseUs = () => {
               }`}
             >
               <div
-                className={`p-8 md:w-1/2 ${language === "ar" ? "text-right" : "text-left"}`}
+                className={`p-8 md:w-1/2 ${
+                  language === "ar" ? "text-right" : "text-left"
+                }`}
               >
                 <h3 className="text-2xl font-bold text-gray-800 mb-4">
                   {language === "en" ? feature.title_en : feature.title_ar}
                 </h3>
                 <p className="text-gray-600">
-                  {language === "en" ? feature.description_en : feature.description_ar}
+                  {language === "en"
+                    ? feature.description_en
+                    : feature.description_ar}
                 </p>
               </div>
               <img

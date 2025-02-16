@@ -36,7 +36,7 @@ export default function WashContact() {
         alt="Contact Dark"
         className="absolute inset-0 w-full h-full object-cover"
       />
-      
+
       {/* Content Section */}
       <div className="w-full bg-transparent rounded-lg  absolute flex flex-col md:flex-row overflow-hidden motion-safe:animate-fadeIn">
         {/* Left Section (Hidden on Small Screens) */}
@@ -61,25 +61,25 @@ export default function WashContact() {
               <IoLocationSharp className="text-red-600 text-2xl md:text-3xl" />
               <p className="text-gray-700 text-sm md:text-base">
                 {language === "en"
-                  ? "Unit 43, 34-36 Ralph Street, Alexandria, NSW 2015"
-                  : "وحدة 43، 34-36 شارع رالف، أليكساندريا، نيو ساوث ويلز 2015"}
+                  ? "Trend Car Care, Street NO: 920 Yenbu, Doha, Qatar"
+                  : "ترند كار كير، شارع رقم 920، ينبع، الدوحة، قطر"}
               </p>
             </div>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <TiMessages className="text-red-600 text-xl md:text-2xl" />
               <p className="text-gray-700 text-sm md:text-base">
                 {language === "en"
                   ? "PO Box 6212, Alexandria NSW 2015"
                   : "ص.ب 6212، أليكساندريا، نيو ساوث ويلز 2015"}
               </p>
-            </div>
+            </div> */}
             <div className="flex items-center gap-3">
               <FaPhone className="text-red-600 text-xl md:text-2xl" />
-              <p className="text-gray-700 text-sm md:text-base">
-                {language === "en" ? "02 9700 7420" : "02 9700 7420"}
-              </p>
+              <span className="text-base">+974 6666 7172</span>
+
+              <p className="text-gray-700 text-sm md:text-base"></p>
             </div>
-            <div className="flex items-center gap-3">
+            {/* <div className="flex items-center gap-3">
               <MdOutlineLocalPostOffice className="text-red-600 text-xl md:text-2xl" />
               <p className="text-gray-700 text-sm md:text-base">
                 {language === "en"
@@ -92,7 +92,7 @@ export default function WashContact() {
                     : "(للإستفسارات الإدارية فقط)"}
                 </span>
               </p>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -106,7 +106,9 @@ export default function WashContact() {
               </label>
               <input
                 type="text"
-                placeholder={language === "en" ? "Enter your name" : "أدخل اسمك"}
+                placeholder={
+                  language === "en" ? "Enter your name" : "أدخل اسمك"
+                }
                 className="w-full border-b border-gray-400 bg-transparent text-gray-800 outline-none focus:border-red-500 transition-all duration-300 p-2 text-sm md:text-base"
               />
             </div>
@@ -119,7 +121,11 @@ export default function WashContact() {
                 </label>
                 <input
                   type="email"
-                  placeholder={language === "en" ? "Enter your email" : "أدخل بريدك الإلكتروني"}
+                  placeholder={
+                    language === "en"
+                      ? "Enter your email"
+                      : "أدخل بريدك الإلكتروني"
+                  }
                   className="w-full border-b border-gray-400 bg-transparent text-gray-800 outline-none focus:border-red-500 transition-all duration-300 p-2 text-sm md:text-base"
                 />
               </div>
@@ -129,7 +135,11 @@ export default function WashContact() {
                 </label>
                 <input
                   type="text"
-                  placeholder={language === "en" ? "Enter your contact number" : "أدخل رقم هاتفك"}
+                  placeholder={
+                    language === "en"
+                      ? "Enter your contact number"
+                      : "أدخل رقم هاتفك"
+                  }
                   className="w-full border-b border-gray-400 bg-transparent text-gray-800 outline-none focus:border-red-500 transition-all duration-300 p-2 text-sm md:text-base"
                 />
               </div>
@@ -141,7 +151,9 @@ export default function WashContact() {
                 {WashArray.labels[language].message}
               </label>
               <textarea
-                placeholder={language === "en" ? "Enter your message" : "أدخل رسالتك"}
+                placeholder={
+                  language === "en" ? "Enter your message" : "أدخل رسالتك"
+                }
                 className="w-full border-b border-gray-400 bg-transparent text-gray-800 outline-none focus:border-red-500 transition-all duration-300 p-2 h-24 resize-none text-sm md:text-base"
               ></textarea>
             </div>

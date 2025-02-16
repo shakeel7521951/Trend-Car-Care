@@ -29,7 +29,8 @@ const Contact = () => {
     },
     {
       image: ONLINE_BOOKING_SPECIAL,
-      title: language === "en" ? "Online Booking Special" : "عرض الحجز عبر الإنترنت",
+      title:
+        language === "en" ? "Online Booking Special" : "عرض الحجز عبر الإنترنت",
       description:
         language === "en"
           ? "Book your car wash online and enjoy 20% off your first booking with us!"
@@ -41,7 +42,9 @@ const Contact = () => {
   return (
     <div className="my-16 px-4 sm:px-7">
       <p className="text-center text-lg font-semibold text-red-600 uppercase tracking-wide">
-        {language === "en" ? "Contact The Trend Car Care Team" : "اتصل بفريق ترند كار كير"}
+        {language === "en"
+          ? "Contact The Trend Car Care Team"
+          : "اتصل بفريق ترند كار كير"}
       </p>
       <h1 className="text-center mt-3 text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray-900">
         {language === "en" ? "Want To Get In Touch?" : "هل ترغب في التواصل؟"}
@@ -63,7 +66,11 @@ const Contact = () => {
             key={index}
             className="relative w-full sm:w-1/3 md:w-[320px] cursor-pointer bg-white rounded-lg shadow-xl overflow-hidden hover:scale-105 transform transition-transform duration-300"
           >
-            <img src={option.image} alt={option.title} className="w-full h-72 object-cover" />
+            <img
+              src={option.image}
+              alt={option.title}
+              className="w-full h-72 object-cover"
+            />
             <div className="absolute top-0 left-0 right-0 bottom-0 flex flex-col justify-center items-center bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
               <h3 className="text-2xl font-bold text-center">{option.title}</h3>
               <p className="text-lg mt-2 text-center">{option.description}</p>

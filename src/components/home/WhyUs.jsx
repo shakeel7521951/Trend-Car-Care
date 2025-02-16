@@ -11,9 +11,9 @@ const WhyUs = () => {
       <div className="flex flex-col sm:flex-row gap-8 sm:gap-16">
         <div className="w-full sm:w-[45%]">
           <img
-            src={frontWash}
+            src="/services/car-college.jpg"
             alt="Front wash"
-            className="w-full h-auto rounded-xl shadow-xl transition-transform transform hover:scale-105"
+            className="h-150 w-200 object-cover rounded-2xl transition-transform transform hover:scale-105 cursor-pointer"
           />
         </div>
         <div className="w-full sm:w-[55%] flex flex-col justify-center">
@@ -22,8 +22,8 @@ const WhyUs = () => {
           </h1>
           <p className="text-lg text-gray-600 mb-6 leading-relaxed">
             {language === "en"
-              ? "At Trend Car Care, we bring the car wash experience directly to your doorstep. Our convenient mobile car wash service is designed to fit seamlessly into your busy lifestyle, ensuring that your vehicle gets the expert care and attention it deserves, all without disrupting your day. We use top-quality products and eco-friendly solutions to leave your car sparkling clean, both inside and out, making it look brand new every time."
-              : "في ترند كار كير، نأخذ تجربة غسيل السيارات مباشرة إلى باب منزلك. خدمتنا المتنقلة لغسيل السيارات مصممة لتناسب نمط حياتك المزدحم، مما يضمن أن يحصل مركبتك على الرعاية والخبرة التي تستحقها، دون أن يؤثر ذلك على يومك. نستخدم منتجات عالية الجودة وحلول صديقة للبيئة لجعل سيارتك نظيفة تمامًا من الداخل والخارج، مما يجعلها تبدو جديدة في كل مرة."}
+              ? "At Trend Car Care, we offer a complete range of car services, including professional washing, premium detailing, and high-quality window tinting. Our goal is to provide expert care tailored to your needs, ensuring your vehicle looks and performs at its best. Whether you need a deep clean, paint protection, or enhanced privacy, our team uses top-quality products and eco-friendly solutions to deliver exceptional results right at your convenience."
+              : "في ترند كار كير، نقدم مجموعة كاملة من خدمات السيارات، بما في ذلك الغسيل الاحترافي، والتفصيل الفاخر، وتظليل النوافذ عالي الجودة. هدفنا هو تقديم عناية متخصصة تلبي احتياجاتك، مما يضمن أن تبدو سيارتك في أفضل حالاتها وتعمل بكفاءة. سواء كنت بحاجة إلى تنظيف عميق، أو حماية للطلاء، أو تعزيز الخصوصية، فإن فريقنا يستخدم منتجات عالية الجودة وحلولًا صديقة للبيئة لضمان نتائج استثنائية بكل راحة وسهولة."}
           </p>
 
           <Link
